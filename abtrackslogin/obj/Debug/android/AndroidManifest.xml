@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="abtrackslogin.abtrackslogin" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="AddTracker" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.AddTracker" />
+    <activity android:label="DashBoard" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.DashBoard" />
+    <activity android:label="DeviceList" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.DeviceList" />
+    <activity android:label="Devicelistlog" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.Devicelistlog" />
+    <activity android:label="Devicelocationdate" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.Devicelocationdate" />
+    <activity android:label="Devicelocationntime" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.Devicelocationntime" />
+    <activity android:label="Email" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.Email" />
+    <activity android:label="ForgotPassword" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.ForgotPassword" />
+    <activity android:label="Main" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.Main" />
+    <activity android:label="Abtracks" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.MainActivity" />
+    <activity android:label="MainDashBoard" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.MainDashBoard" />
+    <activity android:label="ManageTracker" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.ManageTracker" />
+    <activity android:label="SignUp" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.SignUp" />
+    <activity android:label="Abtracks" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.Splash">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="ViewMap" android:name="md504f0b40ea4d493d8a272ef9b890f3f83.ViewMap" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="abtrackslogin.abtrackslogin.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.abtrackslogin.abtrackslogin" />
+      </intent-filter>
+    </receiver>
+    <provider android:authorities="abtrackslogin.abtrackslogin.firebaseinitprovider" android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:initOrder="100" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+  </application>
+</manifest>

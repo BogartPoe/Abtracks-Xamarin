@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_dashboard"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_below="@+id/icon"
+        android:id="@+id/dashboard_welcome"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome, user"
+        android:textColor="@color/colorPrimaryDark"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/dashboard_welcome"
+        android:id="@+id/dashboard_input_newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/dashboard_input_newpassword"
+        android:id="@+id/dashboard_btn_change_pass"
+        android:text="Change Password"
+        android:background="#00B4E7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/dashboard_btn_change_pass"
+        android:id="@+id/dashboard_btn_addtracker"
+        android:layout_marginTop="20dp"
+        android:text="Add tracker"
+        android:background="#00B4E7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/dashboard_btn_addtracker"
+        android:id="@+id/dashboard_btn_editTracker"
+        android:layout_marginTop="20dp"
+        android:text="Delete Tracker"
+        android:background="#00B4E7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/dashboard_btn_editTracker"
+        android:id="@+id/dashboard_btn_change_map"
+        android:layout_marginTop="20dp"
+        android:text="View Map"
+        android:background="#00B4E7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/dashboard_btn_change_map"
+        android:id="@+id/dashboard_btn_logout"
+        android:text="Logout"
+        android:background="#00B4E7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

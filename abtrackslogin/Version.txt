@@ -1,0 +1,16 @@
+﻿/*
+ * version 3.0 a of abracks
+ *  current features
+ *     - user authentication 
+ *     - user registration with confrimation password and email verification
+ *     - reseting password with confirmation password
+ *     - change password
+ *	   - login restriction 3 times 
+ *     
+ *   in development features
+ *     
+ *     - add tracking device to a account
+ *     - restricted device to each account
+ *     
+ *author : Bogart Poe
+*/

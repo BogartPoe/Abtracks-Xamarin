@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa9d3df"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:background="@drawable/Backbutton"
+            android:layout_width="49.0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:id="@+id/main_back"
+            android:layout_marginLeft="0.0dp" />
+        <TextView
+            android:layout_below="@+id/icon"
+            android:id="@+id/dashboard_welcome"
+            android:layout_centerHorizontal="true"
+            android:text="No Tracker Selected"
+            android:textSize=" 20dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/linearLayout1"
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="Date Log"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_gravity="center" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/txtName"
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+        <EditText
+            android:id="@+id/email"
+            android:hint="Enter Your Email"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_below="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:id="@+id/circularProgress"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar" />
+</RelativeLayout>
